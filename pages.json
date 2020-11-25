@@ -82,7 +82,16 @@
           "path":"products_list/products_list",
            "style":{}
         }
-      ]
+          ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
     }
   ]
 }

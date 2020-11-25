@@ -1,5 +1,6 @@
 <template>
 	<view>
+    <i-search :bgcolor="'#d11200'" :radius="20" @click="toSearch" ></i-search>
 		<view class="scroll-view-container">
       <!-- 左侧视图区域 -->
       <scroll-view class="left-scrollView" scroll-y="true" :style="{height: winHeight + 'px'} ">
@@ -38,7 +39,7 @@
 			};
 		},
     onLoad(){
-      this.winHeight=uni.getSystemInfoSync().windowHeight
+      this.winHeight=uni.getSystemInfoSync().windowHeight-50
       this.getCateList()
     },
     methods:{
@@ -62,6 +63,11 @@
       toProductList(item){
         uni.navigateTo({
           url:'/subpkg/products_list/products_list?cid=' + item.cat_id
+        })
+      },
+      toSearch(){
+        uni.navigateTo({
+          url:"/subpkg/search/search"
         })
       }
     }
