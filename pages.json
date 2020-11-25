@@ -69,5 +69,20 @@
         "selectedIconPath": "static/tab_icons/my-active.png"
       }
     ]
-  }
+  },
+  "subPackages":[
+    {
+      "root":"subpkg",
+      "pages":[
+        {
+          "path":"products_detail/products_detail",
+           "style":{}
+        },
+        {
+          "path":"products_list/products_list",
+           "style":{}
+        }
+      ]
+    }
+  ]
 }
